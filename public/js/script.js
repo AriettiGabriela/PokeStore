@@ -29,12 +29,21 @@ done.addEventListener("click", () => {
   popupok.classList.remove("show");
 });
 
+const popupalready = document.getElementById("already");
+const retry = document.getElementById("retry");
+
+retry.addEventListener("click", () => {
+  popupalready.classList.remove("show");
+});
+
 /* funcion */
 function popup(param) {
   if (param == 1) {
     popupWrong.classList.add("show");
   } else if (param == 2) {
     popupok.classList.add("show");
+  } else if (param == 3) {
+    popupalready.classList.add("show");
   }
 }
 
