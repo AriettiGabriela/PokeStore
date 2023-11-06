@@ -10,3 +10,11 @@ $pass = $_POST["pass"];
 $consulta = "SELECT * FROM users WHERE mail='$mail'";
 $resultado = mysqli_query($conexion, $consulta);
 
+if (mysqli_num_rows($resultado) == 1) {
+    $verificar = mysqli_fetch_assoc ($resultado);
+    if ($verificar['contra'] == $pass) {
+        header("location: ../views/main.html");
+    } else {
+        header("location:../../index.html?error=1");
+    }
+}
