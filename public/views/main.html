@@ -57,14 +57,141 @@
     </div>
     <div class="productos">
         <div class="filtros">
-            <img src="../img/favicon.png" alt="">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <!-- VER TODO -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Ver todo
+                        </button>
+                    </h2>
+                </div>
+                <!-- ACCESORIOS -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Accesorios
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="public/baseDatos.php" target="marco"><span
+                                            class="material-symbols-outlined">
+                                            radio_button_unchecked
+                                        </span>Pokedex</a></li>
+                                <li class="list-group-item"><a href="public/baseDatos.php" target="marco"><span
+                                            class="material-symbols-outlined">
+                                            radio_button_unchecked
+                                        </span>Pokeballs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- STARTERS -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Starters
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <!-- por tipo -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseFour">
+                                        Por tipo
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><a href="public/baseDatos.php"
+                                                    target="marco"><span class="material-symbols-outlined">
+                                                        radio_button_unchecked
+                                                    </span>Planta</a></li>
+                                            <li class="list-group-item"><a href="public/baseDatos.php"
+                                                    target="marco"><span class="material-symbols-outlined">
+                                                        radio_button_unchecked
+                                                    </span>Fuego</a></li>
+                                            <li class="list-group-item"><a href="public/baseDatos.php"
+                                                    target="marco"><span class="material-symbols-outlined">
+                                                        radio_button_unchecked
+                                                    </span>Agua</a></li>
+                                            <li class="list-group-item"><a href="public/baseDatos.php"
+                                                    target="marco"><span class="material-symbols-outlined">
+                                                        radio_button_unchecked
+                                                    </span>Eléctrico</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- por region -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseFive">
+                                        Por Region
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item"><a href="public/baseDatos.php"
+                                                    target="marco"><span class="material-symbols-outlined">
+                                                        radio_button_unchecked
+                                                    </span>Kanto</a></li>
+                                            <li class="list-group-item"><a href="public/baseDatos.php"
+                                                    target="marco"><span class="material-symbols-outlined">
+                                                        radio_button_unchecked
+                                                    </span>Johto</a></li>
+                                            <li class="list-group-item"><a href="public/baseDatos.php"
+                                                    target="marco"><span class="material-symbols-outlined">
+                                                        radio_button_unchecked
+                                                    </span>Hoenn</a></li>
+                                            <li class="list-group-item"><a href="public/baseDatos.php"
+                                                    target="marco"><span class="material-symbols-outlined">
+                                                        radio_button_unchecked
+                                                    </span>Sinnoh</a></li>
+                                            <li class="list-group-item"><a href="public/baseDatos.php"
+                                                    target="marco"><span class="material-symbols-outlined">
+                                                        radio_button_unchecked
+                                                    </span>Teselia</a></li>
+                                            <li class="list-group-item"><a href="public/baseDatos.php"
+                                                    target="marco"><span class="material-symbols-outlined">
+                                                        radio_button_unchecked
+                                                    </span>Kalos</a></li>
+                                            <li class="list-group-item"><a href="public/baseDatos.php"
+                                                    target="marco"><span class="material-symbols-outlined">
+                                                        radio_button_unchecked
+                                                    </span>Alola</a></li>
+                                            <li class="list-group-item"><a href="public/baseDatos.php"
+                                                    target="marco"><span class="material-symbols-outlined">
+                                                        radio_button_unchecked
+                                                    </span>Galar</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="frame">
-            <iframe src="public/baseDatos.php" name="marco"></iframe>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"></script>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
