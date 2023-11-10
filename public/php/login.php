@@ -17,7 +17,7 @@ if (mysqli_num_rows($resultado) == 1) {
         if ($verificar['permiso'] == 0) {
             header("location: ../views/main.html");
         } else {
-            header("location: ../views/admin.html");
+            header("location: ../views/admin.php");
         }
     } else {
         header("location:../../index.html?error=1");

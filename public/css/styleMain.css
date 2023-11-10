@@ -16,6 +16,7 @@ body {
   font-family: "Montserrat", sans-serif;
   height: 100vh;
   margin: 0;
+  min-width: 700px;
 }
 
 nav {
@@ -27,7 +28,7 @@ nav {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 5vw;
   margin-left: 5vw;
   color: #fff;
   text-shadow: 2px 1px 5px #3d3d3d;
@@ -38,7 +39,7 @@ h1 {
 
 .iconos .material-symbols-outlined {
   color: #fff;
-  font-size: 35px !important;
+  font-size: 3vw !important;
   font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0;
   text-shadow: 2px 1px 5px #3d3d3d;
 }
@@ -94,12 +95,14 @@ a {
   vertical-align: middle;
   margin-right: 2px;
 }
-.provi {
-  background-color: #3d3d3d;
-  margin-top: 50px;
+.conTabla {
+  margin: 4vw 15vw;
+  padding: 1%;
 }
 
-h2 {
+#saludo {
   align-self: center;
-  font-size: 3em;
+  font-size: 3vw;
+  font-weight: bolder;
+  margin-top: 4vh;
 }
