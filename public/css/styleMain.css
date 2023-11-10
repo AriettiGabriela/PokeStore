@@ -94,3 +94,12 @@ a {
   vertical-align: middle;
   margin-right: 2px;
 }
+.provi {
+  background-color: #3d3d3d;
+  margin-top: 50px;
+}
+
+h2 {
+  align-self: center;
+  font-size: 3em;
+}

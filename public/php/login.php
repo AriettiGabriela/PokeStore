@@ -22,4 +22,6 @@ if (mysqli_num_rows($resultado) == 1) {
     } else {
         header("location:../../index.html?error=1");
     }
+} else {
+    header("location:../../index.html?error=1");
 }
