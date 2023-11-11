@@ -1,0 +1,28 @@
+.bodyframe {
+  background-color: #ffffff00;
+  background-image: none;
+  margin-top: 8vh;
+  max-height: 700px;
+}
+.card {
+  margin: 1vw;
+  max-width: 290px;
+  border-radius: 13px;
+}
+
+.card-img-top {
+  height: 90%;
+}
+.card-body {
+  text-decoration: none;
+}
+.card-body h3 {
+  width: 100%;
+  font-size: 30px;
+  color: black;
+}
+.card-body span {
+  width: 100%;
+  font-size: 20px;
+  color: rgb(52, 83, 117);
+}

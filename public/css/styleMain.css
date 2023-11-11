@@ -63,13 +63,12 @@ h1 {
 }
 
 .productos {
-  background-color: #3d3d3d;
+  background-color: #ffffff;
   margin: 2vh 5vw;
   display: flex;
 }
 
 .filtros {
-  background-color: #ff4b2b;
   padding-top: 5vh;
   width: 20%;
   height: 50vh;
