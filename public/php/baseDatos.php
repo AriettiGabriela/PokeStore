@@ -26,7 +26,7 @@
                 $datos2 = mysqli_query($conexion, $consulta2);
                 while ($reg = mysqli_fetch_array($datos1)) { ?>
                     <div class="card">
-                        <img class="card-img-top" src="data:image/jpg;base64, <?php echo base64_encode($reg['imagen']) ?>">
+                        <img class="card-img-top" src="<?php echo $reg['img1']?>">
                         <a href="ver.php?id=<?php echo $reg['id']; ?>" class="card-body">
                             <h3 class="card-title"><?php echo ucwords($reg['nombre']) ?></h3>
                             <span>$ <?php echo $reg['precio']; ?></span>
@@ -35,7 +35,7 @@
                 <?php }
                 while ($reg2 = mysqli_fetch_array($datos2)) { ?>
                     <div class="card">
-                        <img class="card-img-top" src="data:image/jpg;base64, <?php echo base64_encode($reg2['imagen']) ?>">
+                        <img class="card-img-top" src="<?php echo $reg2['img1']?>">
                         <a href="ver.php?id=<?php echo $reg2['id']; ?>" class="card-body">
                             <h3 class="card-title"><?php echo ucwords($reg2['nombre']) ?></h3>
                             <span>$ <?php echo $reg2['precio']; ?></span>
