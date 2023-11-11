@@ -74,14 +74,14 @@ h1 {
   width: 20%;
   height: 50vh;
 }
-.frame {
+#frameprod {
   display: flex;
   justify-content: center;
   width: 95vw;
   height: 800px;
   margin: auto;
 }
-.frame iframe {
+#frameprod iframe {
   width: 100%;
   height: 1450px;
 }
@@ -105,4 +105,11 @@ a {
   font-size: 3vw;
   font-weight: bolder;
   margin-top: 4vh;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+}
+button#este.accordion-button::after {
+  opacity: 0;
 }
