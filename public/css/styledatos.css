@@ -28,9 +28,10 @@
 div.container {
   margin: 0px !important;
   max-width: 120% !important;
-
 }
 div.row {
   max-width: 120% !important;
-
+}
+h5.card-title {
+  color: rgb(78, 78, 78);
 }

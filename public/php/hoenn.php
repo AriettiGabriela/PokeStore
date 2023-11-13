@@ -20,28 +20,16 @@
                 $conexion = mysqli_connect("127.0.0.1:3308", "root", "");
                 mysqli_select_db($conexion, "pokemon");
 
-                $consulta1 = 'SELECT * FROM productos';
+                $consulta1 = "SELECT * FROM starters WHERE region='Hoenn'";
                 $datos1 = mysqli_query($conexion, $consulta1);
-                $consulta2 = 'SELECT * FROM starters';
-                $datos2 = mysqli_query($conexion, $consulta2);
                 while ($reg = mysqli_fetch_array($datos1)) { ?>
                     <div class="card">
-                        <img class="card-img-top" src="<?php echo $reg['img1'] ?>">
+                        <img class="card-img-top" src="<?php echo $reg['img1']?>">
                         <a href="ver.php?id=<?php echo $reg['id']; ?>" class="card-body">
                             <h3 class="card-title"><?php echo ucwords($reg['nombre']) ?></h3>
-                            <h5 class="card-title"><?php echo ucwords($reg['modelo']) ?></h5>
+                            <h5 class="card-title">Tipo: <?php echo ucwords($reg['tipo']) ?></h5>
+                            <h5 class="card-title">Región: <?php echo ucwords($reg['region']) ?></h5>
                             <span>$ <?php echo $reg['precio']; ?></span>
-                        </a>
-                    </div>
-                <?php }
-                while ($reg2 = mysqli_fetch_array($datos2)) { ?>
-                    <div class="card">
-                        <img class="card-img-top" src="<?php echo $reg2['img1'] ?>">
-                        <a href="ver.php?id=<?php echo $reg2['id']; ?>" class="card-body">
-                            <h3 class="card-title"><?php echo ucwords($reg2['nombre']) ?></h3>
-                            <h5 class="card-title">Tipo: <?php echo ucwords($reg2['tipo']) ?></h5>
-                            <h5 class="card-title">Región: <?php echo ucwords($reg2['region']) ?></h5>
-                            <span>$ <?php echo $reg2['precio']; ?></span>
                         </a>
                     </div>
                 <?php }
