@@ -37,11 +37,13 @@ h1 {
   vertical-align: bottom;
 }
 
+
 .iconos .material-symbols-outlined {
   color: #fff;
   font-size: 3vw !important;
   font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0;
   text-shadow: 2px 1px 5px #3d3d3d;
+  margin-left: 1.25vw;
 }
 .iconos {
   margin-right: 3vw;
@@ -109,4 +111,14 @@ a {
 }
 button#este.accordion-button::after {
   opacity: 0;
+}
+.form-control-lg {
+  margin: 0.5vh -0.75vw !important;
+}
+form {
+  display: flex !important;
+}
+
+.clear{
+  all: unset !important;
 }
