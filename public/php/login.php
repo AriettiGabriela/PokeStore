@@ -15,13 +15,13 @@ if (mysqli_num_rows($resultado) == 1) {
     if ($verificar['contra'] == $pass) {
         header("location: ../views/main.html");
         if ($verificar['permiso'] == 0) {
-            header("location: ../views/main.html");
+            header("location: ../../index.html");
         } else {
             header("location: ../views/admin.php");
         }
     } else {
-        header("location:../../index.html?error=1");
+        header("location:../views/login.html?error=1");
     }
 } else {
-    header("location:../../index.html?error=1");
+    header("location:../views/login.html?error=1");
 }

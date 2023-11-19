@@ -16,13 +16,17 @@
     <nav>
         <h1>Poke Store</h1>
         <div class="iconos">
-            <span class="material-symbols-outlined">
-                search
-            </span>
+        <form action="../php/buscar.php" method="post">
+                <input class="form-control form-control-lg" type="text" placeholder="buscar"
+                    aria-label=".form-control-lg example" name="buscar">
+                <span class="material-symbols-outlined"><button class="clear">
+                        search</button>
+                </span>
+            </form>
             <span class="material-symbols-outlined">
                 shopping_cart
             </span>
-            <span class="material-symbols-outlined">
+            <span class="material-symbols-outlined" onclick="window.open('public/views/login.html','_self')">
                 account_circle
             </span>
             <span class="material-symbols-outlined" onclick="window.open('../../index.html','_self')">

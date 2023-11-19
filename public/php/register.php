@@ -10,10 +10,10 @@ $consulta = "SELECT * FROM users WHERE mail='$mailnew'";
 $resultado = mysqli_query($conexion, $consulta);
 
 if (mysqli_num_rows($resultado) == 1) {
-    header("location:../../index.html?error=3");
+    header("location:../views/login.html?error=3");
 } else {
     $alta = "INSERT INTO users (username,mail,contra,permiso) VALUE ('$usernew','$mailnew','$passnew','0')";
 
     $datos = mysqli_query($conexion, $alta);
-    header("location:../../index.html?error=2");
+    header("location:../views/login.html?error=2");
 }
