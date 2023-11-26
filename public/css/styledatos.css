@@ -35,3 +35,41 @@ div.row {
 h5.card-title {
   color: rgb(78, 78, 78);
 }
+
+.verlos {
+  width: 500px;
+}
+.ver {
+  background-color: #fff !important;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.titlever {
+  flex-wrap: wrap;
+  padding: 3vw 1vw 0 0;
+  margin-left: 3vw;
+}
+.nombrever {
+  font-size: 4em;
+  color: #ff4b2b;
+}
+.modelover {
+  color: grey;
+}
+.imgver {
+  width: 30vw !important;
+  border-radius: 25px;
+}
+button.botonver {
+  background-color: cornflowerblue;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 3vw;
+}
+a {
+  color: #fff !important;
+  font-size: 1.5em;
+  text-decoration: none;
+}
