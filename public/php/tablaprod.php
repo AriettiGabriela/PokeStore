@@ -41,7 +41,7 @@
                                     edit
                                 </span></a>
                         </td>
-                        <td><a href="borrar.php?id=<?php echo $reg['id']; ?>"><span class="material-symbols-outlined">
+                        <td><a href="confirmprod.php?id=<?php echo $reg['id']; ?>"><span class="material-symbols-outlined">
                                     delete
                                 </span></a>
                         </td>

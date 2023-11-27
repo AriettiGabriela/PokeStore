@@ -164,3 +164,15 @@ div.estilomod {
 #h2form {
   margin-top: 2vw !important;
 }
+.btnborrar {
+  flex-wrap: nowrap;
+  margin-top: 2vw;
+}
+a.atablaborrar {
+  background-color: rgb(125, 20, 20) !important;
+  color: #fcfbfb;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 1vw 3vw;
+}

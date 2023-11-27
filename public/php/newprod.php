@@ -1,18 +1,3 @@
-<?php
-$conexion = mysqli_connect("127.0.0.1:3308", "root", "");
-mysqli_select_db($conexion, "pokemon");
-
-$id = $_GET['id'];
-$consulta = "SELECT * FROM productos WHERE id='$id'";
-$respuesta = mysqli_query($conexion, $consulta);
-$datos = mysqli_fetch_array($respuesta);
-
-$nombre = $datos["nombre"];
-$modelo = $datos["modelo"];
-$precio = $datos["precio"];
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,21 +12,18 @@ $precio = $datos["precio"];
 
 <body id="tablas">
     <div class="estilomod">
-        <h2 id="h2form">INGRESAR NUEVOS DATOS</h2>
+        <h2 id="h2form">CARGAR NUEVO PRODUCTO</h2>
         <form action="" method="post" enctype="multipart/form-data" class="formmod">
-            <label>ARTICULO Nº</label>
-            <input type="text" name="id" value="<?php echo "$id"; ?>">
-            <br><br>
             <label>NOMBRE</label>
-            <input type="text" name="nombre" value="<?php echo "$nombre"; ?>">
+            <input type="text" name="nombre">
             <br><br>
             <label>MODELO</label>
-            <input type="text" name="modelo" value="<?php echo "$modelo"; ?>">
+            <input type="text" name="modelo">
             <br><br>
             <label>PRECIO</label>
-            <input type="text" name="precio" value="<?php echo "$precio"; ?>">
+            <input type="text" step=".01" name="precio">
             <br><br>
-            <input type="submit" name="guardar_cambios" value="Guardar Cambios">
+            <input type="submit" name="guardar_cambios" value="Cargar Producto">
             <button type="submit" name="Cancelar" formaction="tablaprod.php">Cancelar</button>
         </form>
     </div>
@@ -49,13 +31,14 @@ $precio = $datos["precio"];
     // Si en la variable constante $_POST existe un indice llamado 'guardar_cambios' ocurre el bloque de instrucciones.
     if (array_key_exists('guardar_cambios', $_POST)) {
 
-        $newid = $_POST['id'];
+
         $newnombre = $_POST['nombre'];
         $newmodelo = $_POST['modelo'];
-        $newprecio = $_POST['precio'];
+        $newprecio = (float)$_POST['precio'];
 
-        $consulta = "UPDATE productos SET nombre='$newnombre', modelo='$newmodelo', precio='$newprecio' WHERE id=$id";
-
+        $conexion = mysqli_connect("127.0.0.1:3308", "root", "");
+        mysqli_select_db($conexion, "pokemon");
+        $consulta = "INSERT INTO productos (id,nombre,modelo,precio) VALUES ('','$newnombre','$newmodelo','$newprecio')";
         mysqli_query($conexion, $consulta);
 
         header('location: tablaprod.php', '_self');
