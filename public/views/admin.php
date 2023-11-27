@@ -16,9 +16,8 @@
     <nav>
         <h1>Poke Store</h1>
         <div class="iconos">
-        <form action="../php/buscar.php" method="post">
-                <input class="form-control form-control-lg" type="text" placeholder="buscar"
-                    aria-label=".form-control-lg example" name="buscar">
+            <form action="../php/buscar.php" method="post">
+                <input class="form-control form-control-lg" type="text" placeholder="buscar" aria-label=".form-control-lg example" name="buscar">
                 <span class="material-symbols-outlined"><button class="clear">
                         search</button>
                 </span>
@@ -35,45 +34,13 @@
         </div>
     </nav>
     <h2 id="saludo">PANEL DE ADMINISTRACION</h2>
-    <div class="conTabla">
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">#ID</th>
-                    <th scope="col">NOMBRE</th>
-                    <th scope="col">TIPO</th>
-                    <th scope="col">REGION</th>
-                    <th scope="col">PRECIO</th>
-                    <th scope="col">MODIFICAR</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                $conexion = mysqli_connect("127.0.0.1:3308", "root", "");
-                mysqli_select_db($conexion, "pokemon");
-
-                $consulta = 'SELECT * FROM starters';
-
-                $datos = mysqli_query($conexion, $consulta);
-
-                while ($reg = mysqli_fetch_array($datos)) { ?>
-                    <tr>
-                        <td><?php echo $reg['id']; ?></td>
-                        <td><?php echo $reg['nombre']; ?></td>
-                        <td><?php echo $reg['tipo']; ?></td>
-                        <td><?php echo $reg['region']; ?></td>
-                        <td><?php echo $reg['precio']; ?></td>
-                        <td><a href="borrar.php?id=<?php echo $reg['id']; ?>"><span class="material-symbols-outlined">
-                                    delete
-                                </span></a><a href="modificar.php?id=<?php echo $reg['id']; ?>"><span class="material-symbols-outlined">
-                                    edit
-                                </span></a>
-                        </td>
-                    </tr>
-                <?php } ?>
-            </tbody>
-        </table>
+    <div class="menutabla">
+    <a href="../php/tablastarters.php" target="ventanatablas" class="atabla">STARTERS</a>
+    <a href="../php/tablastarters.php" target="ventanatablas" class="atabla">AGREGAR STARTER</a>
+    <a href="../php/tablaprod.php" target="ventanatablas" class="atabla">PRODUCTOS</a>
+    <a href="../php/tablaprod.php" target="ventanatablas" class="atabla">AGREGAR PRODUCTO</a>
     </div>
+    <iframe name="ventanatablas" src="../php/tablastarters.php" id="frametabla"></iframe>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 

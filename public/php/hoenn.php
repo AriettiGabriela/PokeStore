@@ -25,7 +25,7 @@
                 while ($reg = mysqli_fetch_array($datos1)) { ?>
                     <div class="card">
                         <img class="card-img-top" src="<?php echo $reg['img1']?>">
-                        <a href="ver.php?id=<?php echo $reg['id']; ?>" class="card-body">
+                        <a href="../views/verstart.php?id=<?php echo $reg['id']; ?>" class="card-body">
                             <h3 class="card-title"><?php echo ucwords($reg['nombre']) ?></h3>
                             <h5 class="card-title">Tipo: <?php echo ucwords($reg['tipo']) ?></h5>
                             <h5 class="card-title">Región: <?php echo ucwords($reg['region']) ?></h5>

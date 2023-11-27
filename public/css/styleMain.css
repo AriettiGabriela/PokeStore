@@ -37,7 +37,6 @@ h1 {
   vertical-align: bottom;
 }
 
-
 .iconos .material-symbols-outlined {
   color: #fff;
   font-size: 3vw !important;
@@ -79,7 +78,7 @@ h1 {
   justify-content: center;
   width: 80%;
   margin: auto;
-  height: 5600px;
+  height: 6000px;
 }
 #frameprod iframe {
   width: 100%;
@@ -95,7 +94,7 @@ a {
   margin-right: 2px;
 }
 .conTabla {
-  margin: 4vw 15vw;
+  margin: 0 15vw;
   padding: 1%;
 }
 
@@ -119,6 +118,49 @@ form {
   display: flex !important;
 }
 
-.clear{
+.clear {
   all: unset !important;
+}
+
+#tablas {
+  background-color: #ffffff00;
+  background-image: none;
+  margin-top: 0;
+  height: auto;
+}
+div.menutabla {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.atabla {
+  background-color: rgb(255, 255, 255);
+  color: #2c2c2c;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 1vw 3vw;
+}
+#frametabla {
+  height: 3000px;
+}
+div.estilomod {
+  background-color: #ffffffce !important;
+  width: 80%;
+  height: 3500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formmod {
+  display: flex !important;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 1vw;
+}
+
+#h2form {
+  margin-top: 2vw !important;
 }
